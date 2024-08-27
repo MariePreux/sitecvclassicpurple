@@ -1,0 +1,342 @@
+/* Style global du corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background: #ecffc1;
+    background: -webkit-linear-gradient(0deg, #ecffc1 0%, #ffe6cc 50%, #dfbaf7 100%);
+    background: linear-gradient(0deg, #ecffc1 0%, #ffe6cc 50%, #dfbaf7 100%);
+    animation-name: changementcouleur;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes changementcouleur {
+    0% {
+        background: rgb(199, 115, 115);
+    }
+}
+
+/* Style de l'en-tête */
+header {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    color: black;
+}
+
+header h1 {
+    text-shadow: 0px 5px 10px #5e233e;
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style du conteneur principal de l'en-tête */
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+    /* Ajusté pour donner de l'espace pour la photo de profil */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: transform .2s;
+
+
+}
+
+
+
+nav ul li a:hover {
+    color: rgba(233, 58, 14, 0.952);
+    transform: scale(1.5);
+
+}
+
+/* Style des titres de niveau 3 */
+h3 {
+    color: #2C3E50;
+    margin-top: 0;
+}
+
+
+
+/* Style de la section principale */
+.container_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    flex-wrap: wrap;
+}
+
+.container_home img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.liens_sociaux {
+    margin: 24px 0
+}
+
+.liens_sociaux a {
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 0.3s ease;
+
+}
+
+.liens_sociaux a:hover {
+    color: rgba(233, 58, 14, 0.952);
+
+}
+
+.description button {
+    background-color: rosybrown;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.description button:hover {
+    background-color: rgba(233, 58, 14, 0.952);
+    color: white;
+}
+
+.description {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*style page expériences */
+.container_expérience {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px 20px 80px;
+    flex-wrap: wrap;
+
+}
+
+.container_expérience li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.experience_description p {
+    text-indent: 50px;
+}
+
+.container_expérience ul p {
+    font-size: 15px;
+    text-align: center;
+
+}
+
+/*style page compétences */
+.container_competences {
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 80px 20px 80px;
+    flex-wrap: wrap;
+
+}
+
+.comp {
+    width: 60%;
+    background-color: #ddd;
+
+}
+
+.competence1,
+.competence2,
+.competence3,
+.competence4,
+.competence5,
+.competence6 {
+    border: solid 1px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.competence1 {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+.competence2 {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.competence3 {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.competence4 {
+    width: 60%;
+    background-color: #808080;
+}
+
+.competence5 {
+    width: 70%;
+    background-color: #ff6600;
+}
+
+.competence6 {
+    width: 50%;
+    background-color: #ffcc00;
+}
+
+
+/*style page contact */
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container_contact {
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Style pour les petits écrans */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .container_home {
+        flex-direction: column;
+    }
+
+    .container_home img,
+    .description {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+footer {
+    text-align: center;
+    position: relative;
+
+}
+

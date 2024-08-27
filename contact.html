@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon CV - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="style.js"></script>
+
+</head>
+
+<body>
+  <!-- En-tête de la page -->
+  <header>
+    <div class="container">
+      <h1>ME CONTACTER</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="diplomes.html">Diplômes</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section principale de la page -->
+  <div class="container_contact">
+    <form action="action_page.php" method="POST">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Prénom</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Votre prénom.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Nom</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Votre nom.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Votre Email.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Localisation</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="france">France</option>
+            <option value="belgique">Autres pays d'Europe</option>
+            <option value="suisse">Hors Europe</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Sujet</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Écrivez votre message.." 
+            required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Envoyer">
+      </div>
+    </form>
+  </div>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="pied_page">
+      <p>&copy; 2024 Prénom Nom. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
